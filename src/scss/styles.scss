@@ -2,11 +2,16 @@
 @import 'blocs/footer';
 @import 'reset';
 @import 'blocs/annimation';
+@import 'blocs/menu';
 
 
 @font-face {
- font-family: "Roboto";
- src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+ font-family: "AlteBold";
+ src: url("../fonts/AlteHaasGroteskBold.ttf") format("truetype");
+}
+@font-face {
+ font-family: "AlteRegular";
+ src: url("../fonts/AlteHaasGroteskRegular.ttf") format("truetype");
 }
 
 body {

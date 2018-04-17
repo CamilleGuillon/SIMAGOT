@@ -1,48 +1,8 @@
 .footer {
   background-color: black;
-  border: 8px solid white;
   height: 10%;
   color: white;
   width: 100%;
   display: inline-flex;
   font-style: bold;
-  font-family: GROBOLD;
-
-}
-
-.footer__Maj {
-  padding: 5px;
-  font-size: 7rem;
-  font-weight: bold;
-  font-family: GROBOLD;
-}
-
-.footer__min{
-  font-size: 4rem;
-}
-
-.footer__Img {
-  width: 100%;
-}
-
-@media all and(min-width: 1000px) {
-  .footer {
-  height: 5%;
-  width: 100%;
-
-}
-
-.footer__Img {
-  height: 75%;
-  width: auto;
-}
-
-.footer__Maj {
-  font-size: 1.5 rem;
-}
-
-.footer__min{
-  font-size: 2rem;
-}
-
 }
