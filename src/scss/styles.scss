@@ -1,18 +1,12 @@
 @import 'blocs/header';
 @import 'blocs/footer';
-@import 'blocs/welcome';
 @import 'reset';
-@import 'blocs/bd';
 @import 'blocs/annimation';
-@import 'blocs/home';
+
 
 @font-face {
  font-family: "Roboto";
  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
-}
-@font-face {
- font-family: "GROBOLD";
- src: url("../fonts/GROBOLD.ttf") format("truetype");
 }
 
 body {
@@ -20,14 +14,10 @@ body {
   width: 100%;
 }
 
-
 html {
   height: 100%;
 }
 
-body {
-  height: 100%;
-}
 * {
   border-sizing: border-box;
 }
