@@ -1,18 +1,19 @@
 .menu {
-  display:flex;
+  display:none;
   justify-content: center;
   align-content: center;
   align-items: center;
   height: 100%;
-  width: 15%;
+  width: 100%;
   background-color: #4a3277;
   position: fixed;
   top: 0px;
   left: 0px;
+  z-index: 10;
 }
 
 .menu__logo {
-  width: 16%;
+  width: 44%;
   height: 15%;
   height: auto;
   position: fixed;
@@ -22,12 +23,28 @@
 }
 
 .menu__logoBlanc {
-  width: 15%;
-  height: 44%;
+  width: 42%;
+  height: 34%;
   position: fixed;
   top: 0px;
   left: 0px;
   z-index: 2;
+}
+@media all and (min-width: 600px) {
+  .menu {
+    width: 15%;
+  }
+
+  .menu__logo {
+  width: 16%;
+  height: auto;
+  }
+
+  .menu__logoBlanc {
+  width: 15%;
+  height: 44%;
+  }
+
 }
 .menu_options {
   margin-top:20%;
