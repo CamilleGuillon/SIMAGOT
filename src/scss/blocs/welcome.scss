@@ -63,23 +63,47 @@
     }
 }
 .welcome__Pein {
-  bottom: 43%;
-  right:32%;
+  bottom: 43vh;
+  right:25vw;
+
+  @media all and (min-width: 600px) {
+     right:32vw;
+     bottom: 43vh;
+    }
 }
 
 .welcome__Rev {
-  bottom: 67%;
-  right: 16%;
+ position:absolute;
+  bottom: 25vh;
+  right: 23vw;
+  max-width: 300px;
+
+
+  @media all and (min-width: 600px) {
+    position:fixed;
+    right:20vw;
+    bottom: 64vh;
+  }
 }
 
 .welcome__Cloi {
-  bottom: 32%;
-  right: 20%;
+  position:absolute;
+  bottom: 17vh;
+  right: 1vw;
+  max-width: 200px;
+  z-index:4;
+    @media all and (min-width: 600px) {
+    position:fixed;
+
+    right:25vw;
+    bottom: 32vh;
+  }
 }
 
 @media all and (min-width: 600px) {
 
   .welcome {
+
     height: 100%;
     width: 70%;
   }
