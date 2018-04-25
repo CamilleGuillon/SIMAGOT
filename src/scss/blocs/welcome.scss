@@ -31,7 +31,7 @@
   height:90vh;
   position: fixed;
   bottom: 0px;
-  right: 2vw;
+  right: 25vw;
 
   @media all and (min-width: 600px) {
     right: 22vw;
@@ -42,10 +42,11 @@
   height:70vh;
   position: fixed;
   bottom: 0px;
-  right: 1vw;
+  right: 25vw;
 
  @media all and (min-width: 600px) {
-    right: 24vw;
+    right: 22vw;
+
   }
 }
 
@@ -64,10 +65,11 @@
 }
 .welcome__Pein {
   bottom: 43vh;
-  right:25vw;
+  right:46vw;
 
   @media all and (min-width: 600px) {
-     right:32vw;
+     right:27vw;
+     font-size: 7rem;
      bottom: 43vh;
     }
 }
@@ -75,14 +77,15 @@
 .welcome__Rev {
  position:absolute;
   bottom: 25vh;
-  right: 23vw;
+  right: 17vw;
   max-width: 300px;
 
 
   @media all and (min-width: 600px) {
     position:fixed;
-    right:20vw;
-    bottom: 64vh;
+    right:28vw;
+    font-size: 7rem;
+    bottom: 40vh;
   }
 }
 
@@ -94,8 +97,8 @@
   z-index:4;
     @media all and (min-width: 600px) {
     position:fixed;
-
-    right:25vw;
+    font-size: 7rem;
+    right:22vw;
     bottom: 32vh;
   }
 }
