@@ -10,5 +10,9 @@
 <header>
 <a class="menu__logo" href="#menu">
 <img class="menu__logo" src="img/logo.png">
-</header><div class="partennaires">
+</a>
+</header>
+<div class="partennaires">
+  <div class="carre">
+  </div>
 </div>
