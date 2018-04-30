@@ -1,13 +1,4 @@
-header {
-  height: 0px; }
 
-.footer {
-  background-color: black;
-  height: 10%;
-  color: white;
-  width: 100%;
-  display: inline-flex;
-  font-style: bold; }
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -52,18 +43,60 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-@keyframes taille {}.menu {
-  display: none;
+@font-face {
+  font-family: "AlteBold";
+  src: url("../fonts/AlteHaasGroteskBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "AlteRegular";
+  src: url("../fonts/AlteHaasGroteskRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "River";
+  src: url("../fonts/riverave.ttf") format("truetype"); }
+
+body {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center; }
+
+html {
+  height: 100%;
+  font-family: "River"; }
+
+* {
+  box-sizing: border-box; }
+
+header {
+  height: 0px; }
+
+.footer {
+  background-color: black;
+  height: 10%;
+  color: white;
+  width: 100%;
+  display: inline-flex;
+  font-style: bold; }
+
+.menu {
+  height: 100%;
+  width: 0%;
+  position:fixed;
+  z-index:1;
+  top: 0px;
+  left: 0px;
+  overflow-y: hidden;
+  transition: 0.5s;
+  background-color: #4a3277;
+
   justify-content: center;
   align-content: center;
   align-items: center;
-  height: 100%;
-  width: 100%;
-  background-color: #4a3277;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  z-index: 10; }
+}
 
 .logo {
   width: 44%;
@@ -113,12 +146,14 @@ table {
   font-size: 1.7rem; }
 
 .welcome {
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-content: center;
-  align-items: center; }
+  align-items: center;
+}
+
   .welcome .welcome__fond {
     height: 100%;
     width: 100%;
@@ -127,7 +162,9 @@ table {
     right: 0px;
     background-image: url(../img/FondBleuP.svg);
     background-size: cover;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+  }
+
     @media all and (min-width: 600px) {
       .welcome .welcome__fond {
         height: 100%;
@@ -139,6 +176,7 @@ table {
   position: fixed;
   bottom: 0px;
   right: 25vw; }
+
   @media all and (min-width: 600px) {
     .welcome__Trait1 {
       right: 22vw; } }
@@ -159,6 +197,7 @@ table {
   transform: rotate(-57deg);
   display: flex;
   position: fixed; }
+
   @media all and (min-width: 600px) {
     .welcome__Text {
       transform: rotate(-55deg);
@@ -189,8 +228,7 @@ table {
   position: absolute;
   bottom: 17vh;
   right: 1vw;
-  max-width: 200px;
-  z-index: 4; }
+  max-width: 200px; }
   @media all and (min-width: 600px) {
     .welcome__Cloi {
       position: fixed;
@@ -210,47 +248,64 @@ table {
   position: fixed;
   left: 0px;
   top: 100vh;
-  z-index: 40; }
+;
+}
+.carre {
+  color : #f68c20;
+}
 .facebook {
-    background-color:#00adef;
     width: 100%;
     height: 100vh;
 }
 /**Page partennaires **/
 .partennaires {
+  position: fixed;
+  right:0px;
+  bottom:0px;
   height: 0px;
   width: 0px;
-  border-right:#00adef solid 500px;
-  border-left: transparent solid 500px;
-  border-bottom:#00adef solid 100vw;
-  border-top: transparent solid 500px;
-
+  border-right:#00adef solid 100vw;
+  border-left: transparent solid 50vw;
+  border-bottom:#00adef solid 50vh;
+  border-top: transparent solid 50vh;
 }
-@font-face {
-  font-family: "AlteBold";
-  src: url("../fonts/AlteHaasGroteskBold.ttf") format("truetype"); }
 
-@font-face {
-  font-family: "AlteRegular";
-  src: url("../fonts/AlteHaasGroteskRegular.ttf") format("truetype"); }
+/** Menu **/
 
-@font-face {
-  font-family: "River";
-  src: url("../fonts/riverave.ttf") format("truetype"); }
+.container {
+  position: fixed;
+  top: 20px;
+  right:20px;
+  display: inline-block;
+  cursor: pointer;
+}
 
-body {
-  height: 100%;
-  width: 100%;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center; }
+.bar1, .bar2, .bar3 {
+  width: 70px;
+  height:13px;
+  background-color: #4a3277;
+  margin: 6px 0;
+  transition: 0.4s;
+}
 
-html {
-  height: 100%;
-  font-family: "River"; }
+/* Pour faire la rotation de lapremiere barre*/
+.change .bar1 {
+  -webkit-transform : rotate(-45deg)
+  translate(-9px,6px);
+  transform: rotate(-45deg)
+  translate(-9px,6px);
+  background-color: #fff;
+}
+/* Pour faire disparaitre la seconde*/
+.change .bar2 {
+  opacity: 0;
+}
 
-* {
-  box-sizing: border-box; }
-
+/*Rotation de la dernierre*/
+.change .bar3 {
+  -webkit-transform : rotate(45deg)
+  translate(5px,-5px);
+  transform: rotate(45deg)
+  translate(-10px,-10px);
+  background-color: #fff;
+}
